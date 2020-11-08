@@ -1,0 +1,60 @@
+.centerit  {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+}
+
+.sidebarFull {
+    height: 100vw;
+    width: 25%;
+    margin: 0;
+    border-radius: 0%;
+    position: fixed;
+    z-index: 100;
+    
+}
+.main{
+   position: relative;
+   padding-top:1%;
+   padding-left: 1%;
+    z-index: 101;
+}
+
+.searchFunction{
+    padding-top: 10%;
+}
+h2{
+    position: relative;
+    margin-left:19%;
+    margin-top: 2%;
+     z-index: 101;
+}
+
+.blueCard{
+    position: relative;
+    margin-left:19%;
+    margin-top: 2%;
+     z-index: 101;
+}
+
+.lolol {
+    margin-left: 1%;
+    width: 65px;
+}
+.Low{
+    background-color: green;
+}
+.Moderate{
+    background-color: yellow;
+}
+.High{
+    background-color: orange;
+}
+.VeryHigh{
+    background-color: red;
+    color: white;
+}
+.Extreme{
+    background-color: purple ;
+    color: white;
+}
