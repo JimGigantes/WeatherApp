@@ -48,6 +48,11 @@ $(document).ready(function() {
         
          if ($("#icon1") != null){
             $('img').remove("#icon")
+            $('span').removeClass("Low")
+            $('span').removeClass("Moderate")
+            $('span').removeClass("High")
+            $('span').removeClass("VeryHigh")
+            $('span').removeClass("Extreme")
 
             // card1Icon.remove
             // card2Icon.remove("#icon2")
@@ -95,15 +100,16 @@ $(document).ready(function() {
             .then(function(response) {
               // Log the resulting object
               UVindexPara.text(response.value);
-
+              console.log(response.value)
               //set classes for color later on
-              if ( response.value <= 2 ) {
+              if ( response.value < 3 ) {
+               
                UVindexPara.addClass('Low')
-               } else if ( response.value >= 3  && response.value <= 5 ) {
+               } else if ( response.value >= 3  && response.value < 6 ) {
                   UVindexPara.addClass('Moderate')
-               }else if ( response.value >= 5  && response.value <= 7) {
+               }else if ( response.value >= 6  && response.value < 8) {
                   UVindexPara.addClass('High')
-               }else if ( response.value >= 8 && response.value <= 11  ) {
+               }else if ( response.value >= 8 && response.value < 11  ) {
                   UVindexPara.addClass('VeryHigh')
                } else {
                   UVindexPara.addClass('Extreme')
